@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color guesser</title>
+    <link rel="stylesheet" type="text/css" href="./css/roomstyle.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="info-container">
+        <div class="logo-container">
+          <img src="./img/logo.png" alt="" />
+          <div class="name">
+            <p>
+              <span class="red">C</span>
+              <span class="green">o</span>
+              <span class="blue">l</span> o r
+            </p>
+            <p class="secondary-text">guesser</p>
+          </div>
+        </div>
+      </div>
+      <div class="players-container">
+        <h2 id="room-name"></h2>
+        <div class="Players-list"></div>
+      </div>
+      <div class="interface-container">
+        <div class="choices-container">
+          <h2 class="choiches-Text">Press start to play</h2>
+          <div class="color-container">
+            <button class="start-btn">Start</button>
+          </div>
+        </div>
+        <div class="chat-container">
+          <div class="messages-container"></div>
+          <form action="">
+            <input type="text" />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</html>

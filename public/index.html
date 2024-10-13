@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color guesser</title>
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="form-container">
+        <div class="logo-container">
+          <img src="./img/logo.png" alt="" />
+          <div class="name">
+            <p>
+              <span class="red">C</span>
+              <span class="green">o</span>
+              <span class="blue">l</span> o r
+            </p>
+            <p class="secondary-text">guesser</p>
+          </div>
+        </div>
+        <form action="room.html">
+          <div>
+            <p>Username</p>
+            <input class="input-field" type="text" name="username" />
+          </div>
+          <div>
+            <p>Game room</p>
+            <input class="input-field" type="text" name="room" />
+          </div>
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</html>
